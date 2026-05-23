@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Email 1 Preview — with Banner</title>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+  body{margin:0;background:#54565a;font-family:'Inter',sans-serif;padding:30px 14px;-webkit-font-smoothing:antialiased}
+  .inbox-note{max-width:600px;margin:0 auto 14px;color:#d6d8db;font-size:12px;text-align:center;letter-spacing:.03em}
+  .email{max-width:600px;margin:0 auto;background:#ffffff;border-radius:8px;overflow:hidden;box-shadow:0 20px 60px rgba(0,0,0,.4)}
+
+  /* email client header sim */
+  .client-head{background:#f4f5f7;border-bottom:1px solid #e3e5e8;padding:16px 22px}
+  .client-head .from{font-size:14px;font-weight:700;color:#1a1a1a}
+  .client-head .subj{font-size:15px;font-weight:600;color:#1a1a1a;margin-top:4px}
+  .client-head .prev{font-size:13px;color:#777;margin-top:2px}
+
+  /* ===== BANNER (drawn, mirrors the Canva graphic) ===== */
+  .banner{display:block;width:100%;background:#0a0a0a;text-decoration:none}
+  .b-top{background:#141414;border-top:5px solid #38b6ff;padding:20px 16px 18px;text-align:center;position:relative}
+  .b-logo{position:absolute;top:20px;width:40px;height:40px;border:2px solid #fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:'Archivo Black';font-size:13px;color:#fff}
+  .b-logo.l{left:18px}.b-logo.r{right:18px}
+  .b-top h1{font-family:'Archivo Black';color:#fff;text-transform:uppercase;margin:0;line-height:1.05}
+  .b-top .l1{font-size:26px}
+  .b-top .l2{font-size:30px}
+  .b-mid{background:#fff;padding:22px 18px 18px;display:flex;align-items:center;justify-content:space-between;gap:10px}
+  .b-bday{font-family:'Archivo Black';color:#38b6ff;text-transform:uppercase;line-height:.95;font-size:38px;text-align:left}
+  .b-photo{width:140px;height:150px;border-radius:6px;background:repeating-linear-gradient(45deg,#ededed 0 10px,#e3e3e3 10px 20px);border:1px dashed #c3c3c3;display:flex;align-items:center;justify-content:center;text-align:center;font-size:11px;font-weight:700;color:#999;flex-shrink:0;padding:6px}
+  .b-cta{background:#38b6ff;text-align:center;padding:20px 16px}
+  .b-cta span{font-family:'Archivo Black';font-size:34px;color:#0a0a0a;text-transform:uppercase}
+
+  /* ===== BODY COPY ===== */
+  .body{padding:30px 30px 10px;color:#1a1a1a;font-size:16px;line-height:1.6}
+  .body p{margin:0 0 16px}
+  .body .steps{background:#f4f7fb;border-left:3px solid #38b6ff;border-radius:0 8px 8px 0;padding:16px 20px;margin:22px 0}
+  .body .steps p{margin:0 0 10px;font-weight:600}
+  .body .steps p:last-child{margin:0}
+  .body a.btn{display:block;background:#38b6ff;color:#0a0a0a;font-family:'Archivo Black';text-transform:uppercase;font-size:17px;text-align:center;text-decoration:none;padding:16px;border-radius:10px;margin:24px 0}
+  .sig{font-weight:700}
+  .foot{padding:20px 30px 30px;border-top:1px solid #eee;color:#999;font-size:12px;text-align:center;margin-top:20px}
+</style>
+</head>
+<body>
+
+<div class="inbox-note">▼ This is a preview mockup — the banner below is drawn so you can see the layout. Build the real one in Canva &amp; swap it in.</div>
+
+<div class="email">
+
+  <div class="client-head">
+    <div class="from">Jase · Better Body Academy</div>
+    <div class="subj">It's my birthday — so I'm giving one of you 6 months free</div>
+    <div class="prev">Coaching, training, nutrition — completely covered. One winner.</div>
+  </div>
+
+  <!-- BANNER -->
+  <a class="banner" href="#">
+    <div class="b-top">
+      <div class="b-logo l">BB</div>
+      <div class="b-logo r">BB</div>
+      <h1 class="l1">FREE 6-MONTH</h1>
+      <h1 class="l2">TRANSFORMATION</h1>
+    </div>
+  </a>
+
+  <!-- BODY -->
+  <div class="body">
+    <p>Hey [First Name],</p>
+    <p>It's my birthday this week.</p>
+    <p>And instead of asking for anything, I'd rather give something away.</p>
+    <p>So here it is — I'm handing one person a full 6-month scholarship into the Academy.</p>
+    <p>Coaching. Training. Nutrition. The whole thing. Completely free for six months.</p>
+    <p>This is the program people pay good money for. One of you gets it for nothing.</p>
+    <p>Why? Because I know someone reading this has been putting it off. Telling yourself you'll start Monday. Start next month. Start when things calm down.</p>
+    <p>They don't calm down. You already know that.</p>
+    <p>So I'm taking the money excuse off the table. All you've got to bring is that you're actually ready.</p>
+
+    <div class="steps">
+      <p>1. Fill out the short application → [APPLY LINK]</p>
+      <p>2. Then DM me "I've entered" on Instagram → @YOUR_HANDLE</p>
+    </div>
+
+    <p>That second step matters. No DM, no entry. I need to know you're serious.</p>
+    <p>Applications close midnight June 14. Winner announced the same day.</p>
+
+    <a class="btn" href="#">Apply Now →</a>
+
+    <p>Could be you.</p>
+    <p class="sig">Jase</p>
+  </div>
+
+  <div class="foot">Better Body Academy · You're getting this because you're on our list.</div>
+
+</div>
+
+</body>
+</html>
